@@ -18,6 +18,15 @@
     .btn { display: inline-block; padding: .6rem 1.2rem; margin-right: .5rem;
            border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
     .btn.alt { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+    section { padding: 1.5rem 0; }
+h2 { border-bottom: 2px solid var(--accent); padding-bottom: .3rem; }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.card { border: 1px solid var(--muted); border-radius: 8px; padding: 1rem; }
+.card h3 { margin-top: 0; }
+.tag { font-size: .8rem; color: var(--muted); }
+.soon { font-style: italic; color: var(--muted); }
+.skills dt { font-weight: 600; margin-top: .8rem; }
+.skills dd { margin: 0; color: var(--muted); }
   </style>
 </head>
 <body>
@@ -29,7 +38,44 @@
   </header>
 
   <main>
-    <!-- Projects, Skills, Contact go here on Days 4-5 -->
+    <section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Retail Sales Analysis</h3>
+      <p class="tag">SQL · Tableau</p>
+      <p>Which regions and categories drive revenue?</p>
+      <p class="soon">Coming soon</p>
+    </div>
+    <div class="card">
+      <h3>Customer Churn Dashboard</h3>
+      <p class="tag">Python · Streamlit</p>
+      <p>Why do customers leave, and who is at risk?</p>
+      <p class="soon">Coming soon</p>
+    </div>
+    <div class="card">
+      <h3>A/B Test Analysis</h3>
+      <p class="tag">R · Quarto</p>
+      <p>Did the new campaign actually improve conversions?</p>
+      <p class="soon">Coming soon</p>
+    </div>
+    <div class="card">
+      <h3>Executive Sales KPIs</h3>
+      <p class="tag">Power BI</p>
+      <p>A one-page KPI view for leadership.</p>
+      <p class="soon">Coming soon</p>
+    </div>
+  </div>
+</section>
+    <section id="skills">
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>SQL</dt><dd>Joins, CTEs, window functions, cohort analysis</dd>
+    <dt>Python</dt><dd>pandas, Plotly, Streamlit, Jupyter</dd>
+    <dt>R</dt><dd>ggplot2, tidyverse, Quarto, hypothesis testing</dd>
+    <dt>BI</dt><dd>Power BI, Tableau, Looker Studio</dd>
+  </dl>
+</section>
   </main>
 </body>
 </html>
