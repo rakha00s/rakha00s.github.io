@@ -6,6 +6,7 @@ Data Analyst who turns raw data into insights.
 - Project 2
 - Project 3
 
+## How to reach me:
 - [LinkedIn](https://www.linkedin.com/in/rakha00s/)
 - [Portfolio](https://rakha00s.github.io)
 - rakha150@gmail.com
