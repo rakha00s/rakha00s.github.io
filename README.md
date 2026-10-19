@@ -1,5 +1,14 @@
-## Hi there 👋
+# Hi, I am Ahmad Rakha Hidayat
+Data Analyst who turns raw data into insights.
 
+## Featured Projects
+- Project 1
+- Project 2
+- Project 3
+
+- [LinkedIn](https://www.linkedin.com/in/rakha00s/)
+- [Portfolio](https://rakha00s.github.io)
+- rakha150@gmail.com
 <!--
 **rakha00s/rakha00s** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
