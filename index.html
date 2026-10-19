@@ -6,76 +6,106 @@
   <title>Ahmad Rakha Hidayat | Data Analyst</title>
   <meta name="description" content="Data analyst portfolio: SQL, Python, R, Power BI, Tableau, Looker.">
   <style>
-    :root { --bg:#ffffff; --text:#1a1a1a; --muted:#666; --accent:#2563eb; }
+    :root { --bg:#ffffff; --text:#1a1a1a; --muted:#666; --accent:#2563eb; --border:#d4d4d8; }
     @media (prefers-color-scheme: dark) {
-      :root { --bg:#111; --text:#eee; --muted:#aaa; --accent:#60a5fa; }
+      :root { --bg:#111; --text:#eee; --muted:#aaa; --accent:#60a5fa; --border:#3f3f46; }
     }
     body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text);
            max-width: 800px; margin: auto; padding: 2rem; line-height: 1.6; }
+    nav a { color: var(--accent); text-decoration: none; }
     .hero { padding: 3rem 0; }
     .hero h1 { font-size: 2.5rem; margin: 0; }
     .hero p { color: var(--muted); font-size: 1.2rem; }
-    .btn { display: inline-block; padding: .6rem 1.2rem; margin-right: .5rem;
+    .btn { display: inline-block; padding: .6rem 1.2rem; margin: 0 .5rem .5rem 0;
            border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
     .btn.alt { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+
     section { padding: 1.5rem 0; }
-h2 { border-bottom: 2px solid var(--accent); padding-bottom: .3rem; }
-.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-.card { border: 1px solid var(--muted); border-radius: 8px; padding: 1rem; }
-.card h3 { margin-top: 0; }
-.tag { font-size: .8rem; color: var(--muted); }
-.soon { font-style: italic; color: var(--muted); }
-.skills dt { font-weight: 600; margin-top: .8rem; }
-.skills dd { margin: 0; color: var(--muted); }
+    h2 { border-bottom: 2px solid var(--accent); padding-bottom: .3rem; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card { border: 1px solid var(--border); border-radius: 8px; padding: 1rem; }
+    .card h3 { margin-top: 0; }
+    .card a { color: var(--accent); }
+    .tag { font-size: .8rem; color: var(--muted); }
+    .soon { font-style: italic; color: var(--muted); }
+    .skills dt { font-weight: 600; margin-top: .8rem; }
+    .skills dd { margin: 0; color: var(--muted); }
+
+    .contact ul { list-style: none; padding: 0; }
+    .contact li { margin: .4rem 0; }
+    .contact a { color: var(--accent); }
+    footer { border-top: 1px solid var(--border); margin-top: 2rem; padding: 1rem 0;
+             color: var(--muted); font-size: .9rem; }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#projects">Projects</a> ·
+    <a href="#skills">Skills</a> ·
+    <a href="#contact">Contact</a>
+  </nav>
+
   <header class="hero">
     <h1>Ahmad Rakha Hidayat</h1>
     <p>Data analyst who turns messy data into decisions.</p>
     <a class="btn" href="https://github.com/rakha00s">GitHub</a>
     <a class="btn alt" href="https://linkedin.com/in/rakha00s">LinkedIn</a>
+    <a class="btn alt" href="resume.pdf">Resume</a>
   </header>
 
   <main>
     <section id="projects">
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Retail Sales Analysis</h3>
-      <p class="tag">SQL · Tableau</p>
-      <p>Which regions and categories drive revenue?</p>
-      <p class="soon">Coming soon</p>
-    </div>
-    <div class="card">
-      <h3>Customer Churn Dashboard</h3>
-      <p class="tag">Python · Streamlit</p>
-      <p>Why do customers leave, and who is at risk?</p>
-      <p class="soon">Coming soon</p>
-    </div>
-    <div class="card">
-      <h3>A/B Test Analysis</h3>
-      <p class="tag">R · Quarto</p>
-      <p>Did the new campaign actually improve conversions?</p>
-      <p class="soon">Coming soon</p>
-    </div>
-    <div class="card">
-      <h3>Executive Sales KPIs</h3>
-      <p class="tag">Power BI</p>
-      <p>A one-page KPI view for leadership.</p>
-      <p class="soon">Coming soon</p>
-    </div>
-  </div>
-</section>
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Retail Sales Analysis</h3>
+          <p class="tag">SQL · Tableau</p>
+          <p>Which regions and categories drive revenue?</p>
+          <p class="soon">Coming soon · <a href="https://github.com/rakha00s/sql-retail-analysis">Repo</a></p>
+        </div>
+        <div class="card">
+          <h3>Customer Churn Dashboard</h3>
+          <p class="tag">Python · Streamlit</p>
+          <p>Why do customers leave, and who is at risk?</p>
+          <p class="soon">Coming soon · <a href="https://github.com/rakha00s/python-churn-dashboard">Repo</a></p>
+        </div>
+        <div class="card">
+          <h3>A/B Test Analysis</h3>
+          <p class="tag">R · Quarto</p>
+          <p>Did the new campaign actually improve conversions?</p>
+          <p class="soon">Coming soon · <a href="https://github.com/rakha00s/r-ab-test-quarto">Repo</a></p>
+        </div>
+        <div class="card">
+          <h3>Executive Sales KPIs</h3>
+          <p class="tag">Power BI</p>
+          <p>A one-page KPI view for leadership.</p>
+          <p class="soon">Coming soon · <a href="https://github.com/rakha00s/powerbi-sales-report">Repo</a></p>
+        </div>
+      </div>
+    </section>
+
     <section id="skills">
-  <h2>Skills</h2>
-  <dl class="skills">
-    <dt>SQL</dt><dd>Joins, CTEs, window functions, cohort analysis</dd>
-    <dt>Python</dt><dd>pandas, Plotly, Streamlit, Jupyter</dd>
-    <dt>R</dt><dd>ggplot2, tidyverse, Quarto, hypothesis testing</dd>
-    <dt>BI</dt><dd>Power BI, Tableau, Looker Studio</dd>
-  </dl>
-</section>
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>SQL</dt><dd>Joins, CTEs, window functions, cohort analysis</dd>
+        <dt>Python</dt><dd>pandas, Plotly, Streamlit, Jupyter</dd>
+        <dt>R</dt><dd>ggplot2, tidyverse, Quarto, hypothesis testing</dd>
+        <dt>BI</dt><dd>Power BI, Tableau, Looker Studio</dd>
+      </dl>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Open to data analyst roles. The best way to reach me is email or LinkedIn.</p>
+      <ul>
+        <li>📧 <a href="mailto:rakha150@gmail.com">rakha150@gmail.com</a></li>
+        <li>💼 <a href="https://linkedin.com/in/rakha00s">LinkedIn</a></li>
+        <li>💻 <a href="https://github.com/rakha00s">GitHub</a></li>
+        <li>📄 <a href="resume.pdf">Resume (PDF)</a></li>
+      </ul>
+    </section>
   </main>
+
+  <footer>© 2026 Ahmad Rakha Hidayat</footer>
 </body>
 </html>
